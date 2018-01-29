@@ -14,5 +14,6 @@ public class MainActivity extends AppCompatActivity {
         //测试2删除和修改的状态操作
         //工作区和缓存区
         //我是dev分支创建的
+        //解决分支的冲突
     }
 }
