@@ -9,13 +9,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:launchMode="standard"
+            android:configChanges="orientation|screenSize"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".OneActivity"
+            android:configChanges="screenLayout"
+            android:label="@string/app_name"
+            android:process=":remote"
+            />
+        <activity android:name=".TwoActivity"
+            android:configChanges="screenLayout"
+            android:label="@string/app_name"
+            android:process="com.bwei.ssp.remote"
+            ></activity>
     </application>
 
 </manifest>
